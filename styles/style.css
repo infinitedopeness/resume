@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');
-body {
-  font-family: 'Special Elite', cursive;
-body {
+html{
   margin: 0;
   padding: 0;
 /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
@@ -9,23 +6,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
-/* The only rule that matters */
-#video-background {
-/*  making the video fullscreen  */
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
-}
-
-/* These just style the content */
-article {
-/*  just a fancy border  */
+body {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,9 +16,23 @@ article {
   margin: 10px;
 }
 
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+
 h1 {
   position: absolute;
-  top: 60%;
+  top: 10%;
   width: 100%;
   font-size: 36px;
   letter-spacing: 3px;
@@ -56,4 +51,53 @@ h1 span {
 
 h1 span a {
   color: #fff;
+}
+h2, h3, h4, {
+  color: #444;
+}
+p {
+  color: #fff
+}
+/* layout styles */
+header#mainHeader {
+	height: 185px;
+}
+main {
+	margin: auto;
+	width: 50%;
+	padding: 0 10px 0 25px;
+}
+section#right, section#links {
+	float: right;
+	clear: right;
+	width: 20%;
+	margin-bottom: 0;
+}
+aside#adCopy {
+	float: right;
+	clear: right;
+	width: 450px;
+	margin-bottom: 1em;
+}
+footer#pageFooter {
+	clear: both;
+	overflow: auto;
+}
+
+.floatRight {
+	float: right;
+}
+.floatLeft {
+	float: left;
+}
+.imgRight {
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 1 em;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
