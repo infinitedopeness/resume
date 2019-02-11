@@ -16,6 +16,7 @@ body {
   margin: 10px;
 }
 
+
 /* The only rule that matters */
 #video-background {
 /*  making the video fullscreen  */
@@ -90,10 +91,20 @@ footer#pageFooter {
 .floatLeft {
 	float: left;
 }
-.imgRight {
-	float: right;
-	margin-left: 1em;
-	margin-bottom: 1 em;
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  opacity: 0.5;
+  border-radius: 2px;
+
+}
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+  }
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
 }
 .center {
   margin: auto;
